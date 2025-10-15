@@ -1,1 +1,1 @@
-[{"name":"HomePage","id":["wearenotabank","lib/pages/home.dart"],"import":"package:wearenotabank/pages/home.dart","params":[]},{"name":"ImprintPage","id":["wearenotabank","lib/pages/imprint.dart"],"import":"package:wearenotabank/pages/imprint.dart","params":[]}]
+[{"name":"Hero","id":["wearenotabank","lib/components/hero.dart"],"import":"package:wearenotabank/components/hero.dart","params":[]}]

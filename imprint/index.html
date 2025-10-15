@@ -5,78 +5,100 @@
     <meta charset="utf-8"/>
     <link href="/favicon.png" rel="icon" type="image/png"/>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Silkscreen" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
     <!--$-->
     <title>Imprint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--/-->
-    <script src="main.clients.dart.js" defer></script>
+    <style>
+      .responsive_flex {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-direction: column;
+      }
+      @media screen and (min-width: 600px) {
+        .responsive_flex {
+          flex-direction: row;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div class="main min-h-screen bg-emerald-950">
-        <div class="sticky top-0 z-50">
-          <header data-aos="fade-down">
+    <div class="main" style="font-family: 'Silkscreen'">
+      <div style="min-height: 100vh; background-color: #064e3b">
+        <div style="position: sticky; top: 0; z-index: 50">
+          <header data-aos="fade-down" data-aos-once="true">
             <div style="display: flex; justify-content: center; align-items: center">
-              <div class="bg-neutral-950 shadow-sm rounded-sm w-full max-w-[1280px] m-4">
-                <div class="flex flex-row justify-between">
-                  <div class="flex flex-row justify-start">
-                    <a class="flex shrink-0 items-center p-3" href="/"><img class="h-10 w-auto" src="/favicon.png"/></a>
-                    <a class="h-100% inline-flex items-center border-b-4 px-2 pt-1 text-sm font-mediumS border-transparent text-neutral-300 hover:border-neutral-300 hover:text-neutral-100" href="/">Home</a>
+              <div style="width: 100%; max-width: 1280px; margin: 1rem; background-color: #0a0a0a">
+                <div style="display: flex; flex-direction: row; justify-content: space-between">
+                  <div style="display: flex; flex-direction: row; justify-content: start">
+                    <a style="display: flex; justify-items: center" href="/"><img style="height: 4rem" src="/favicon.png"/></a>
+                    <a style="display: flex; height: 100%; padding-top: 0.25rem; padding-left: 0.25rem; padding-right: 0.25rem; border-bottom-style: solid; border-bottom-color: transparent; border-bottom-width: 0.25rem; justify-content: center; align-items: center; color: #e5e5e5; font-size: 0.875rem; font-weight: 500" href="/">Home</a>
                   </div>
                 </div>
               </div>
             </div>
           </header>
         </div>
-        <!--@pages/imprint-->
-        <section class="flex content-center text-neutral-200">
-          <div class="mx-auto px-8">
-            <h1 class="text-3xl text-emerald-600">Imprint</h1>
-            <div class="max-w-[500px] text-left mx-auto my-4 font-bold text-neutral-400">Information provided based on § 5 TMG:</div>
-            <div class="max-w-[500px] text-left mx-auto">
-              <div class="font-bold">Cube Algos UG (haftungsbeschränkt)</div>
-              Registration Court: Amtsgericht Aachen
-              <div>Registered under Number: <span class="text-emerald-500">HRB 27008</span></div>
-            </div>
-            <div class="max-w-[500px] text-left mx-auto my-4"><div class="font-bold">Represented by:</div><div>Kevin Scheeren</div></div>
-            <div class="max-w-[500px] text-left mx-auto my-4"><div class="font-bold">USt-IdNr.</div><div>DE363092217</div></div>
-            <div class="max-w-[500px] text-left mx-auto my-4"><div class="font-bold">Address:</div><div>An der Maar 19</div><div>52525</div><div>Heinsberg</div></div>
-            <div class="max-w-[500px] text-left mx-auto my-4"><div><span class="font-bold">E-Mail:</span><p>contact@cubealgos.org</p></div></div>
-            <div class="max-w-[500px] text-left mx-auto my-4">
-              <div class="font-bold">Platform of the EU-Commision for online-disputes:</div>
-              <a class="text-emerald-500" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>
-              <div>We neither must nor want to participate in any of such lawsuits.</div>
-            </div>
+        <div style="max-width: 500px; padding: 1rem; margin-left: auto; margin-right: auto; color: #94a3b8; text-align: left">
+          <h1 style="color: #34d399; font-size: 2.5rem; font-weight: 600">Imprint</h1>
+          <div style="margin-top: 1rem; margin-bottom: 1rem; color: #6ee7b7; font-weight: bold">Information provided based on § 5 TMG:</div>
+          <div>
+            <div style="color: #f5f5f5; font-weight: bold">Cube Algos UG (haftungsbeschränkt)</div>
+            <div>Registration Court: Amtsgericht Aachen</div>
+            <div>Registered under Number: <span style="color: #34d399">HRB 27008</span></div>
           </div>
-        </section>
-        <!--/@pages/imprint-->
+          <div style="margin-top: 1rem; margin-bottom: 1rem"><div style="color: #f5f5f5; font-weight: bold">Represented by:</div><div>Kevin Scheeren</div></div>
+          <div style="margin-top: 1rem; margin-bottom: 1rem"><div style="color: #f5f5f5; font-weight: bold">USt-IdNr.</div><div>DE363092217</div></div>
+          <div style="margin-top: 1rem; margin-bottom: 1rem">
+            <div style="color: #f5f5f5; font-weight: bold">Address:</div>
+            <div>An der Maar 19</div>
+            <div>52525</div>
+            <div>Heinsberg</div>
+          </div>
+          <div style="margin-top: 1rem; margin-bottom: 1rem">
+            <div><span style="color: #f5f5f5; font-weight: bold">E-Mail:</span><p>contact@cubealgos.org</p></div>
+          </div>
+          <div style="margin-top: 1rem; margin-bottom: 1rem">
+            <div style="color: #f5f5f5; font-weight: bold">Platform of the EU-Commision for online-disputes:</div>
+            <a style="color: #34d399" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>
+            <div style="color: #d4d4d4">We neither must nor want to participate in any of such lawsuits.</div>
+          </div>
+        </div>
         <footer>
           <div style="display: flex; justify-content: center; align-items: center">
-            <div class="bg-neutral-950 shadow-sm rounded-sm w-full max-w-[1280px] m-4 px-8 py-6">
-              <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-                <div class="grid grid-cols-3 gap-8 xl:col-span-2">
-                  <div>
-                    <h3 class="text-base font-bold text-neutral-100">Info</h3>
-                    <ul class="mt-4 space-y-4"><li><a class="text-base text-neutral-400 hover:text-emerald-500" href="/imprint">Imprint</a></li></ul>
-                  </div>
-                  <div>
-                    <h3 class="text-base font-bold text-neutral-100">Links</h3>
-                    <ul class="mt-4 space-y-4">
-                      <li>
-                        <a class="text-base text-neutral-400 hover:text-emerald-500" href="https://x.com/0xwearenotabank">X</a>
-                      </li>
-                      <li>
-                        <a class="text-base text-neutral-400 hover:text-emerald-500" href="https://github.com/wearenotabank">GitHub</a>
-                      </li>
-                    </ul>
-                  </div>
+            <div style="z-index: 50; width: 100%; height: 100%; max-width: 1280px; max-height: 640px; padding: 1.5rem 2rem; margin: 1rem; background-color: #0a0a0a">
+              <div class="responsive_flex">
+                <div style="margin-right: 3rem">
+                  <div style="margin-bottom: 0.5rem"><p style="color: #f5f5f5">Info:</p></div>
+                  <ul style="height: 100%; margin-bottom: 0.5rem">
+                    <li><a style="margin-bottom: 1.5rem; color: #d4d4d4; line-height: 2rem" href="/imprint">Imprint</a></li>
+                    <div style="height: 100%"></div>
+                  </ul>
                 </div>
+                <div style="margin-right: 3rem">
+                  <div style="margin-bottom: 0.5rem"><p style="color: #f5f5f5">Resources:</p></div>
+                  <ul style="height: 100%; margin-bottom: 0.5rem">
+                    <li>
+                      <a style="margin-bottom: 1.5rem; color: #d4d4d4; line-height: 2rem" href="https://github.com/wearenotabank">GitHub</a>
+                    </li>
+                    <div style="height: 100%"></div>
+                  </ul>
+                </div>
+                <div style="margin-right: 3rem">
+                  <div style="margin-bottom: 0.5rem"><p style="color: #f5f5f5">Socials:</p></div>
+                  <ul style="height: 100%; margin-bottom: 0.5rem">
+                    <li>
+                      <a style="margin-bottom: 1.5rem; color: #d4d4d4; line-height: 2rem" href="https://x.com/0xwearenotabank">X</a>
+                    </li>
+                    <div style="height: 100%"></div>
+                  </ul>
+                </div>
+                <div style="width: 100%"></div>
               </div>
-              <div class="mt-8 border-t border-neutral-100 pt-8 md:flex md:items-center md:justify-between">
-                <div class="flex space-x-6 md:order-2"></div>
-                <a class="mt-8 text-base text-neutral-200 md:order-1 md:mt-0" href="https://cubealgos.xyz">Cube Algos UG (haftungsbeschränkt)</a>
-              </div>
+              <div style="display: flex; padding-top: 1.5rem; margin-top: 1.5rem; border-top-style: solid; border-top-color: #d4d4d4; border-top-width: 0.1rem; flex-direction: row; justify-content: space-between; align-items: center"><a style="color: #d4d4d4" href="https://cubealgos.xyz">Cube Algos UG (haftungsbeschränkt)</a></div>
             </div>
           </div>
         </footer>
